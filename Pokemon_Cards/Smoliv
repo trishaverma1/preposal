@@ -1,0 +1,16 @@
+import pygame
+# activate the pygame library .
+pygame.init()
+X = 280
+Y = 390
+scrn = pygame.display.set_mode((X, Y))
+pygame.display.set_caption('image')
+imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Smoliv.png").convert()
+scrn.blit(imp, (0, 0))
+pygame.display.flip()
+status = True
+while (status):
+    for i in pygame.event.get():
+        if i.type == pygame.QUIT:
+            status = False
+pygame.quit()

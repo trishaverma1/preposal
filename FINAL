@@ -1,0 +1,806 @@
+import numpy 
+import pygame
+import random
+from colorama import init
+init()
+from colorama import Fore
+import tkinter as tk
+from tkinter import messagebox
+import numpy as np
+import pygame
+import sys
+import math
+
+#Pokemon Random Card Generator
+
+def Bulbasaur(): 
+    pygame.init()
+    X = 290
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Bulbasaur.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Charizard(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Charizard.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Charmander(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Charmander.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Gastly(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Gastly.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Greninja(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Greninja.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Gyarados(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Gyarados.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Jigglypuff(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Jigglypuff.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Pikachu(): 
+    pygame.init()
+    X = 290
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Pikachu.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Smoliv(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Smoliv.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Squirtle(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Squirtle.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Zebistrika(): 
+    pygame.init()
+    X = 285
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Zebstrika.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def randomCard(): 
+    card = random.randint(0,10) 
+    if card == 0:  
+        return Bulbasaur()
+    elif card == 1: 
+        return Charizard()
+    elif card == 2: 
+        return Charmander()
+    elif card == 3: 
+        return Gastly()
+    elif card == 4: 
+        return Greninja()
+    elif card == 5: 
+        return Gyarados()
+    elif card == 6: 
+        return Jigglypuff()
+    elif card == 7: 
+        return Pikachu()
+    elif card == 8:
+        return Smoliv()
+    elif card == 9: 
+        return Squirtle()
+    else:
+        return Zebistrika()
+
+
+
+
+
+#TicTacToe Game
+def ticTacToe():
+    class TicTacToe(tk.Tk):
+        def __init__(self):
+            super().__init__()
+            self.title("Tic Tac Toe")
+            self.geometry("300x300")
+            self.current_player = 'X'
+            self.board = [[' ' for _ in range(3)] for _ in range(3)]
+            self.buttons = [[None]*3 for _ in range(3)]
+
+            # Customizing fonts and colors
+            self.title_font = ('Arial', 16, 'bold')
+            self.button_font = ('Arial', 20, 'bold')
+            self.x_color = '#FF6F61'
+            self.o_color = '#6B5B95'
+            self.button_bg = '#FFB6C1'
+            self.button_fg = '#2C3E50'
+
+            # Creating buttons grid
+            for i in range(3):
+                for j in range(3):
+                    self.buttons[i][j] = tk.Button(self, text=" ", font=self.button_font, width=6, height=3,
+                                                    bg=self.button_bg, fg=self.button_fg,
+                                                    command=lambda row=i, col=j: self.click(row, col))
+                    self.buttons[i][j].grid(row=i, column=j, padx=3, pady=3)
+
+        def click(self, row, col):
+            if self.board[row][col] == ' ':
+                self.board[row][col] = 'X'
+                self.buttons[row][col].config(text='X', fg=self.x_color)
+                if self.check_winner('X'):
+                    messagebox.showinfo("Winner!", "You win!")
+                    randomCard()
+                    self.reset_board()
+                elif self.is_board_full():
+                    messagebox.showinfo("Draw!", "It's a draw!")
+                    self.reset_board()
+                else:
+                    self.computer_move()
+
+        def computer_move(self):
+            # Simple AI: Randomly choose an empty cell
+            empty_cells = [(i, j) for i in range(3) for j in range(3) if self.board[i][j] == ' ']
+            if empty_cells:
+                row, col = random.choice(empty_cells)
+                self.board[row][col] = 'O'
+                self.buttons[row][col].config(text='O', fg=self.o_color)
+                if self.check_winner('O'):
+                    messagebox.showinfo("Winner!", "Computer wins!")
+                    self.reset_board()
+                elif self.is_board_full():
+                    messagebox.showinfo("Draw!", "It's a draw!")
+                    self.reset_board()
+
+        def check_winner(self, player):
+            for i in range(3):
+                if self.board[i][0] == self.board[i][1] == self.board[i][2] == player or \
+                    self.board[0][i] == self.board[1][i] == self.board[2][i] == player:
+                    return True
+            if self.board[0][0] == self.board[1][1] == self.board[2][2] == player or \
+                self.board[0][2] == self.board[1][1] == self.board[2][0] == player:
+                return True
+            return False
+
+        def is_board_full(self):
+            for row in self.board:
+                if ' ' in row:
+                    return False
+            return True
+
+        def reset_board(self):
+            self.board = [[' ' for _ in range(3)] for _ in range(3)]
+            for i in range(3):
+                for j in range(3):
+                    self.buttons[i][j].config(text=' ', fg=self.button_fg)
+
+    if __name__ == "__main__":
+        app = TicTacToe()
+        app.mainloop()
+
+#Wordle game
+def wordle():
+    wordList = ["ABACK","ABASE","ABATE","ABBEY","ABIDE","ABOUT","ABOVE","ABYSS","ACRID","ACTOR","ACUTE","ADAPT","ADMIT","ADOBE","ADOPT","ADORE","ADULT","AFTER","AGAIN","AGAPE","AGATE","AGENT","AGILE","AGING","AGLOW","AGONY","AGREE","AHEAD","ALBUM","ALIEN","ALIKE","ALIVE","ALLOW","ANGEL","ANGER","ANGRY","ANODE","ANTIC","AORTA","APART","APHID","APPLE","APPLY","APRON","APTLY","ARBOR","ARDOR","ARGUE","AROMA","ASCOT","ASIDE","AWAIT","AWAKE","AWFUL","AXIOM","AZURE",
+                "BACON","BADGE","BADLY","BAGEL","BAKER","BALSA","BANAL","BARGE","BASIC","BATHE","BATON","BATTY","BAYOU","BEACH","BEADY","BEAST","BEEFY","BEGET","BEGET","BEGIN","BEING","BELCH","BELIE","BELLY","BELOW","BENCH","BERET","BERTH","BESET","BINGE","BIOME","BIRCH","BIRTH","BLACK","BLAME","BLUFF","BLURB","BLURT","BLUSH","BOOBY","BOOST","BOOZE","BOOZY","BORAX","BOUGH","BRAID","BRAKE","BRASH","BRAVE","BREAD","BREAK","BREED","BUILD","BUILT","BULKY","BULLY","BUNCH","BURLY",
+                "CABLE","CACAO","CACHE","CANDY","CANNY","CANOE","CAPER","CARAT","CARGO","CAROL","CARRY","CATCH","CATER","CAULK","CAUSE","CEDAR","CHAFE","CHAIN","CHAMP","CHANT","CHARD","CHARM","CHART","CHEAT","CHEEK","CHEER","CHEST","CHIEF","CHILD","CHILL","CHIME","CHOIR","CHOKE","CLEAR","CLERK","CLICK","CLIMB","CLING","CLOCK","CLONE","CLOSE","CLOTH","CLOWN","CLUCK","COACH","COAST","COCOA","COLON","COMET","COMMA","CONDO","CONIC","CORNY","COULD","COUNT","COURT","COVET","CROAK",
+                "DADDY",'DAISY','DANCE','DANDY','DEATH','DEBUG','DECAY','DELTA','DELVE','DENIM','DEPOT','DEPTH','DEVIL','DIGIT','DINER','DISCO','DITTO','DODGE','DOING','DONOR','DONUT','DOUBT','DOWRY','DOZEN','DRAIN','DREAM','DRINK','DRIVE','DROLL','DROOP','DUCHY','DUTCH','DUVET','DWARF','DWELL','DWELT',
+                'EARLY','EARTH','EGRET','EJECT','ELDER','ELOPE','ELUDE','EMAIL','EMBER','EMPTY','ENEMA','ENJOY','ENNUI','ENTER','EPOCH','EPOXY','EQUAL','EQUIP','ERODE','ERROR','ERUPT','ESSAY','ETHIC','ETHOS','EVADE','EVERY','EVOKE','EXACT','EXCEL','EXERT','EXIST','EXPEL','EXTRA','EXULT',
+                'FACET','FARCE','FAULT','FAVOR','FEAST','FEIGN','FERRY','FEWER','FIELD','FIEND','FIFTY','FINAL','FINCH','FINER','FIRST','FISHY','FIXER','FJORD','FLAIL','FLAIR','FLAME','FLANK','FLARE','FLASK','FLESH','FLICK','FLING','FLIRT','FLOAT','FLOCK','FLOOD','FLOOR','FLORA','FLOSS','FLOUT','FORCE','FOUND','FOYER','FRAME','FRANK','FRESH','FRIED','FUNNY',
+                'GAMER','GAMMA','GAUDY','GAUZE','GAWKY','GECKO','GENRE','GHOUL','GIANT','GIDDY','GIRTH','GIVEN','GLASS','GLAZE','GLEAN','GLOAT','GLOBE','GLOOM','GLORY','GLOVE','GLYPH','GNASH','GOLEM','GONER','GOOSE','GORGE','GOUGE','GRACE','GRADE','GRAIL','GRAND','GRAPH','GRASP','GRATE','GREAT','GREEN','GREET','GRIEF','GRIME','GRIMY','GUEST','GUIDE','GUILD','GULLY','GUPPY',
+                'HAIRY','HAPPY','HATCH','HATER','HAVOC','HEADY','HEARD','HEART','HEATH','HEAVE','HEAVY','HEIST','HELIX','HELLO','HERON','HINGE','HOARD','HOBBY','HOMER','HORSE','HORDE','HOTEL','HOUND','HOUSE','HOWDY','HUMAN','HUMID','HUMOR','HUMPH','HUNCH','HUNKY','HURRY','HUTCH','HYPER',
+                'IGLOO','IMAGE','IMPEL','INANE','INDEX','INEPT','INERT','INFER','INPUT','INTER','IONIC','IRATE','IRONY','ISLET','ITCHY','IVORY',
+                'JAUNT','JAZZY','JOKER','JOLLY','JOUST','JUDGE',
+                'KARMA','KAYAK','KAZOO','KEBAB','KHAKI','KIOSK','KNEEL','KNELT','KNOCK','KNOLL','KOALA',
+                'LABEL','LABOR','LAPEL','LAPSE','LARGE','LARVA','LATTE','LAYER','LEAFY','LEAKY','LEAPT','LEARN','LEASH','LEAVE','LEDGE','LEERY','LEGGY','LEMON','LIBEL','LIGHT','LILAC','LIMIT','LINEN','LINER','LINGO','LIVER','LOCAL','LOCUS','LOFTY','LOGIC','LOOPY','LOSER','LOUSE','LOVER','LOWLY','LOYAL','LUCID','LUCKY','LUNAR','LUNCH','LUNGE','LUSTY','LYING']
+
+    wordToGuess = random.choice(wordList)
+    wordToGuessList = list(wordToGuess)
+    guesses = 0
+    won = False
+    guessList = ["-"] * len(wordToGuessList)
+    while(guesses<6):
+        userGuess = str(input(Fore.WHITE+"Enter a guess: ")).upper()
+        userGuessList = list(userGuess)
+        index0 = 0
+        for i in userGuessList:
+            if(userGuessList[index0]==wordToGuessList[index0]):
+                guessList[index0]=userGuessList[index0]
+            index0+=1
+        if(userGuessList==wordToGuessList):
+            print("You won! The word was",wordToGuess)
+            randomCard()
+            won = True
+            return won
+            exit()
+        else:
+            print("You have",(6-guesses),"guesses left.")
+            index1 = 0
+            for i in userGuessList:
+                if(guessList[index1]==userGuessList[index1]):
+                    print(Fore.GREEN+i," ",end="")
+                elif(userGuessList[index1] in guessList):
+                    print(Fore.YELLOW+i," ",end="")
+                else:
+                    print(Fore.WHITE+i," ",end="")
+                index1+=1
+            
+        guesses+=1
+        print()
+    print("The word was:",wordToGuess)
+    return won
+#Connect4 Game (single player)
+def connectFourSP(): 
+    BLUE = (0,0,255)
+    BLACK = (0,0,0)
+    RED = (255,0,0)
+    YELLOW = (255,255,0)
+    ROW_COUNT = 6
+    COLUMN_COUNT = 7
+
+    #Create Board 
+    def create_board():
+        board = np.zeros((ROW_COUNT, COLUMN_COUNT))
+        return board
+
+    #Drop a piece
+    def drop_piece(board, row, col, piece):
+        board[row][col] = piece
+
+    #Is move valid:
+    def is_valid_location(board, col):
+        return board[ROW_COUNT-1][col] == 0
+
+    # Function to get the next open row in a column
+    def get_next_open_row(board, col):
+        for r in range(ROW_COUNT):
+            if board[r][col] == 0:
+                return r
+
+    #Print the board
+    def print_board(board):
+        print(np.flip(board, 0))
+
+    #Horizontal Win
+    def winning_move(board, piece):
+        # Check horizontal locations for win
+        for c in range(COLUMN_COUNT-3):
+            for r in range(ROW_COUNT):
+                if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
+                    return True
+
+        #Vertical Win
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+                    return True
+
+        #Diaganol Win1
+        for c in range(COLUMN_COUNT-3):
+            for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                    return True
+
+        #Diaganol Win2
+        for c in range(COLUMN_COUNT-3):
+            for r in range(3, ROW_COUNT):
+                if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+                    return True
+
+    #Game Board
+    def draw_board(board):
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT):
+                pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE, SQUARESIZE, SQUARESIZE))
+                pygame.draw.circle(screen, BLACK, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+SQUARESIZE+SQUARESIZE/2)), RADIUS)
+        
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT):        
+                if board[r][c] == 1:
+                    pygame.draw.circle(screen, RED, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+                elif board[r][c] == 2: 
+                    pygame.draw.circle(screen, YELLOW, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+        pygame.display.update()
+
+    board = create_board()
+    print_board(board)
+    game_over = False
+    turn = random.randint(0, 1)  
+    pygame.init()
+    SQUARESIZE = 100
+    width = COLUMN_COUNT * SQUARESIZE
+    height = (ROW_COUNT+1) * SQUARESIZE
+    size = (width, height)
+    RADIUS = int(SQUARESIZE/2 - 5)
+    screen = pygame.display.set_mode(size)
+    draw_board(board)
+    pygame.display.update()
+    myfont = pygame.font.SysFont("monospace", 75)
+
+    # Main game loop
+    while not game_over:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+
+            if event.type == pygame.MOUSEMOTION:
+                pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
+                posx = event.pos[0]
+                if turn == 0:
+                    pygame.draw.circle(screen, RED, (posx, int(SQUARESIZE/2)), RADIUS)
+                else: 
+                    pygame.draw.circle(screen, YELLOW, (posx, int(SQUARESIZE/2)), RADIUS)
+                pygame.display.update()
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
+                posx = event.pos[0]
+                col = int(math.floor(posx/SQUARESIZE))
+
+                if is_valid_location(board, col):
+                    row = get_next_open_row(board, col)
+                    drop_piece(board, row, col, 1)
+
+                    if winning_move(board, 1):
+                        label = myfont.render("You win!!", 1, RED)
+                        screen.blit(label, (40,10))
+                        game_over = True
+                        randomCard()
+
+                    turn += 1
+                    turn = turn % 2
+
+                    print_board(board)
+                    draw_board(board)
+
+                    if game_over:
+                        pygame.time.wait(3000)
+            
+            # Computer's move
+            if turn == 1 and not game_over:
+                col = random.randint(0, COLUMN_COUNT-1)
+                if is_valid_location(board, col):
+                    pygame.time.wait(500)  # Add delay to make the computer's move visible
+                    row = get_next_open_row(board, col)
+                    drop_piece(board, row, col, 2)
+
+                    if winning_move(board, 2):
+                        label = myfont.render("Computer wins!!", 1, YELLOW)
+                        screen.blit(label, (40,10))
+                        game_over = True
+
+                    print_board(board)
+                    draw_board(board)
+
+                    turn += 1
+                    turn = turn % 2
+
+                    if game_over:
+                        pygame.time.wait(3000)
+
+#Connect4 Game (double player)
+def connectFourDP():
+    BLUE = (0,0,255)
+    BLACK = (0,0,0)
+    RED = (255,0,0)
+    YELLOW = (255,255,0)
+
+    ROW_COUNT = 6
+    COLUMN_COUNT = 7
+
+    def create_board():
+        board = np.zeros((ROW_COUNT,COLUMN_COUNT))
+        return board
+
+    def drop_piece(board, row, col, piece):
+        board[row][col] = piece
+
+    def is_valid_location(board, col):
+        return board[ROW_COUNT-1][col] == 0
+
+    def get_next_open_row(board, col):
+        for r in range(ROW_COUNT):
+            if board[r][col] == 0:
+                return r
+
+    def print_board(board):
+        print(np.flip(board, 0))
+
+    def winning_move(board, piece):
+        #Horizontal Win
+        for c in range(COLUMN_COUNT-3):
+            for r in range(ROW_COUNT):
+                if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
+                    return True
+
+        #Vertical Win
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+                    return True
+
+        #Diaganol Win1
+        for c in range(COLUMN_COUNT-3):
+            for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                    return True
+
+        #Diaganol Win2
+        for c in range(COLUMN_COUNT-3):
+            for r in range(3, ROW_COUNT):
+                if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+                    return True
+
+    def draw_board(board):
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT):
+                pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE, SQUARESIZE, SQUARESIZE))
+                pygame.draw.circle(screen, BLACK, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+SQUARESIZE+SQUARESIZE/2)), RADIUS)
+        
+        for c in range(COLUMN_COUNT):
+            for r in range(ROW_COUNT):		
+                if board[r][c] == 1:
+                    pygame.draw.circle(screen, RED, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+                elif board[r][c] == 2: 
+                    pygame.draw.circle(screen, YELLOW, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+        pygame.display.update()
+
+
+    board = create_board()
+    print_board(board)
+    game_over = False
+    turn = 0
+
+    pygame.init()
+
+    SQUARESIZE = 100
+
+    width = COLUMN_COUNT * SQUARESIZE
+    height = (ROW_COUNT+1) * SQUARESIZE
+
+    size = (width, height)
+
+    RADIUS = int(SQUARESIZE/2 - 5)
+
+    screen = pygame.display.set_mode(size)
+    draw_board(board)
+    pygame.display.update()
+
+    myfont = pygame.font.SysFont("monospace", 75)
+
+    while not game_over:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+
+            if event.type == pygame.MOUSEMOTION:
+                pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
+                posx = event.pos[0]
+                if turn == 0:
+                    pygame.draw.circle(screen, RED, (posx, int(SQUARESIZE/2)), RADIUS)
+                else: 
+                    pygame.draw.circle(screen, YELLOW, (posx, int(SQUARESIZE/2)), RADIUS)
+            pygame.display.update()
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
+                #print(event.pos)
+                #Player 1 Input
+                if turn == 0:
+                    posx = event.pos[0]
+                    col = int(math.floor(posx/SQUARESIZE))
+
+                    if is_valid_location(board, col):
+                        row = get_next_open_row(board, col)
+                        drop_piece(board, row, col, 1)
+
+                        if winning_move(board, 1):
+                            label = myfont.render("Player 1 wins!!", 1, RED)
+                            screen.blit(label, (40,10))
+                            game_over = True
+                            randomCard()
+                #Player 2 Input
+                else:				
+                    posx = event.pos[0]
+                    col = int(math.floor(posx/SQUARESIZE))
+
+                    if is_valid_location(board, col):
+                        row = get_next_open_row(board, col)
+                        drop_piece(board, row, col, 2)
+
+                        if winning_move(board, 2):
+                            label = myfont.render("Player 2 wins!!", 1, YELLOW)
+                            screen.blit(label, (40,10))
+                            game_over = True
+                            randomCard()
+                            
+
+
+                print_board(board)
+                draw_board(board)
+
+                turn += 1
+                turn = turn % 2
+
+                if game_over:
+                    pygame.time.wait(3000)
+#Asking questions
+def questions():
+    qNum = random.randint(0,10)
+    if(qNum == 0):
+        print("When variables and functions are combined and encapsulated in a single entitiy, what are they called?")
+        print("A: Objects")
+        print("B: Classes")
+        print("C: Variables")
+        print("D: Strings")
+        userAns = input("")
+        if(userAns == "A"):
+            return True
+        else:
+            return False
+    elif(qNum == 1):
+        print("What is the name of a function that is defined inside another function?")
+        print("A: Borrowed Function")
+        print("B: Nested Function")
+        print("C: Cloned Function")
+        print("D: Enclosed Function")
+        userAns = input("")
+        if(userAns == "B"):
+            return True
+        else:
+            return False
+    elif(qNum == 2):
+        print("What is the name of the Python element used to store groups or segments of text?")
+        print("A: Variable")
+        print("B: String")
+        print("C: Operator")
+        print("D: Constant")
+        userAns = input("")
+        if(userAns == "B"):
+            return True
+        else:
+            return False
+    elif(qNum == 3):
+        print("Who is the creator of Python?")
+        print("A: Steve Jobs")
+        print("B: Larry Page")
+        print("C: Guido van Rossum")
+        print("D: Mark Zuckerberg")
+        userAns = input("")
+        if(userAns == "C"):
+            return True
+        else:
+            return False
+    elif(qNum == 4):
+        print("In which year was Python officially released as an open source software?")
+        print("A: 1989")
+        print("B: 1995")
+        print("C: 2000")
+        print("D: 2006")
+        userAns = input("")
+        if(userAns == "D"):
+            return True
+        else:
+            return False
+    elif(qNum == 5):
+        print("Guido van Rossum, the creator of Python, worked on Python's development while employed at which research institute?")
+        print("A: MIT")
+        print("B: Bell Labs")
+        print("C: CERN")
+        print("D: Google")
+        userAns = input("")
+        if(userAns == "C"):
+            return True
+        else:
+            return False
+    elif(qNum == 6):
+        print("Which of the following is NOT a primitive data type in Python?")
+        print("A: Integer")
+        print("B: Float")
+        print("C: Character")
+        print("D: Boolean")
+        userAns = input("")
+        if(userAns == "C"):
+            return True
+        else:
+            return False
+    elif(qNum == 7):
+        print("What is the purpose of the if statement in Python?")
+        print("A: To define a loop")
+        print("B: To handle exceptions")
+        print("C: To define a function")
+        print("D: To perform conditional execution")
+        userAns = input("")
+        if(userAns == "D"):
+            return True
+        else:
+            return False
+    elif(qNum == 8):
+        print("What does the range function do in Python?")
+        print("A: Generates a list of numbers")
+        print("B: Returns the square root of a number")
+        print("C: Calculates the factorial of a number")
+        print("D: Returns a sequence of numbers")
+        userAns = input("")
+        if(userAns == "D"):
+            return True
+        else:
+            return False
+    else:
+        print("What does the append method do in Python lists?")
+        print("A: Adds an element to the end of the list")
+        print("B: Removes the last element of the list")
+        print("C: Replaces an exisitng element in the list")
+        print("D: Adds an element to the beginning of the list")
+        userAns = input("")
+        if(userAns == "A"):
+            return True
+        else:
+            return False
+
+#Letting user choose what game to play
+def games():
+    print("What game do you want to play?")
+    print("Enter 1 to play Tic Tac Toe.")
+    print("Enter 2 to play Wordle.")
+    print("Enter 3 to play a single player version of Connect 4.")
+    print("Enter 4 to play a double player version of Connect 4.")
+    ask = int(input(""))
+    num = False
+    while(num==False):
+        if(ask == 1):
+            ticTacToe()
+            num = True
+        elif(ask == 2):
+            wordle()
+            num = True
+        elif(ask == 3):
+            connectFourSP()
+            num = True
+        elif(ask == 4):
+            connectFourDP()
+            num = True
+        else:
+            print("Please enter a valid number and try again.")
+            newAsk = int(input())
+            ask = newAsk
+
+running = True
+while(running):
+    print("Welcome to Codemon Quest!")
+    print("Answer a question correctly to play the game and win Pokemon cards!")
+    answer = False
+    while(answer==False):
+        answer = questions()
+        if(answer):
+            print("Correct!")
+            games()
+        else:
+            print("Wrong.")
+            answer = False
+    playAgain = input(print("Would you like to play again? Y/N"))
+    if(playAgain=="Y"):
+        running = True
+    else:
+        running = False

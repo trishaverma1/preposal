@@ -1,0 +1,206 @@
+import pygame
+import random 
+
+
+def Bulbasaur(): 
+    pygame.init()
+    X = 290
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Bulbasaur.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Charizard(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Charizard.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Charmander(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Charmander.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Gastly(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Gastly.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Greninja(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Greninja.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Gyarados(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Gyarados.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Jigglypuff(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Jigglypuff.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Pikachu(): 
+    pygame.init()
+    X = 290
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Pikachu.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Smoliv(): 
+    pygame.init()
+    X = 280
+    Y = 390
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Smoliv.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Squirtle(): 
+    pygame.init()
+    X = 290
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Squirtle.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def Zebistrika(): 
+    pygame.init()
+    X = 285
+    Y = 400
+    scrn = pygame.display.set_mode((X, Y))
+    pygame.display.set_caption('image')
+    imp = pygame.image.load("/Users/tarakehair/Documents/FinalP/Pokemon_Cards/Zebstrika.png").convert()
+    scrn.blit(imp, (0, 0))
+    pygame.display.flip()
+    status = True
+    while (status):
+        for i in pygame.event.get():
+            if i.type == pygame.QUIT:
+                status = False
+    pygame.quit()
+
+def randomP(): 
+    card = random.randint(0,10) 
+    if card == 0:  
+        return Bulbasaur()
+    elif card == 1: 
+        return Charizard()
+    elif card == 2: 
+        return Charmander()
+    elif card == 3: 
+        return Gastly()
+    elif card == 4: 
+        return Greninja()
+    elif card == 5: 
+        return Gyarados()
+    elif card == 6: 
+        return Jigglypuff()
+    elif card == 7: 
+        return Pikachu()
+    elif card == 8:
+        return Smoliv()
+    elif card == 9: 
+        return Squirtle()
+    else:
+        return Zebistrika()
+
+randomP()
